@@ -29,8 +29,9 @@ a:link,
 a:visited {
     text-decoration: none;
     font-family: "Montserrat Alternates", serif;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
+    color: black;
 }
 
 a:hover {
