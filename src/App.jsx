@@ -43,16 +43,23 @@ function App() {
                 </div>
             </header>
             <div className="page">
-                <div className="page__main-block main-block">
-                    <div className="main-block _container">
-                        <img className="main-block__img-one" src="/bkgdImg/boom.png" />
-                        <img className="main-block__img-second" src="/bkgdImg/stars.png" />
-                        <div className="main-block__container _container">
-                            <h1 className="main-block__title">
-                                Your Daily <span>Podcast</span>
-                            </h1>
-                            <p className="main-block__text">We cover all kinds of categories and a weekly special guest.</p>
-                            <button className="main-block_button">SUBSCRIBE</button>
+                <div className="main-block">
+                    <img className="main-block__img-one" src="/bkgdImg/boom.png" />
+                    <img className="main-block__img-second" src="/bkgdImg/stars.png" />
+                    <div className="main-block__container _container">
+                        <h1 className="main-block__title">
+                            Your Daily <span>Podcast</span>
+                        </h1>
+                        <p className="main-block__text">
+                            We cover all kinds of categories and <br /> a weekly special guest.
+                        </p>
+                        <button className="main-block__button">SUBSCRIBE</button>
+                        <div className="main-block__carusel-container carusel-container">
+                            <img src="/carusel/img1.png" alt="img1" />
+                            <img src="/carusel/img2.png" alt="img1" />
+                            <img src="/carusel/img3.png" alt="img1" />
+                            <img src="/carusel/img4.png" alt="img1" />
+                            <img src="/carusel/img5.png" alt="img1" />
                         </div>
                     </div>
                 </div>
