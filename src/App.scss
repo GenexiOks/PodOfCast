@@ -433,8 +433,7 @@
             width: 48px;
             height: 38px;
 
-            &:active {
-                fill: red;
+            &:active path {
                 stroke: red;
             }
         }

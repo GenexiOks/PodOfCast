@@ -1,4 +1,5 @@
 import "./App.scss";
+import Testimonial from "./component/testimonial";
 
 function App() {
     return (
@@ -131,7 +132,9 @@ function App() {
                             <h1>What our listeners say</h1>
                             <p>Their experience throughout every platform</p>
                         </div>
-                        <div className="testimonials__scroll-container"></div>
+                        <div className="testimonials__scroll-container">
+                            <Testimonial />
+                        </div>
                         <div className="testimonials__buttons">
                             <div className="testmonials__button-left">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
