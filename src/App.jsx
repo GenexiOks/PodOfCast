@@ -326,6 +326,18 @@ function App() {
                         />
                     </div>
                 </div>
+                <div className="membership">
+                    <div className="membership__container _container">
+                        <img className="membership__img-one" src="/testimonials/img.png" />
+                        <img className="membership__img-second" src="/scribble.png" />
+                        <div className="membership__title">
+                            <h1>Membership benefits</h1>
+                            <h3>Become our sponsor and get all benefits</h3>
+                        </div>
+                        <div className="membership__info-container"></div>
+                        <button className="membership__button">SEE PRICING</button>
+                    </div>
+                </div>
             </main>
             <div className="footer"></div>
         </>

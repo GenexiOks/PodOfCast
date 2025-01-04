@@ -367,7 +367,7 @@
 
 .testimonials {
     position: relative;
-    height: 945px;
+    height: 940px;
     background: rgba(237, 243, 247, 1);
 
     &__container {
@@ -446,5 +446,73 @@
                 stroke: red;
             }
         }
+    }
+}
+
+// ---------------------Membership--------------------------
+
+.membership {
+    height: 1153px;
+
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img-one {
+        position: absolute;
+        top: -77px;
+        left: 505px;
+    }
+
+    &__img-second {
+        position: absolute;
+        top: -109px;
+        left: 726px;
+        padding: 74.03px 22.84px 73.95px 22.79px;
+    }
+
+    &__title {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 662px;
+        height: 127px;
+        top: 139px;
+        left: 249px;
+        gap: 20px;
+
+        & > h3 {
+            font-size: 22.65px;
+            font-weight: 500;
+            line-height: 36.24px;
+            text-align: center;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        width: 170px;
+        height: 62px;
+        top: 951px;
+        left: 505px;
+        border-radius: 8px;
+        border: 2px solid black;
+
+        &:hover {
+            box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+            background-color: black;
+            color: white;
+        }
+    }
+
+    &__info-container {
+        position: absolute;
+        top: 367px;
+        width: 100%;
+        height: 484px;
     }
 }
