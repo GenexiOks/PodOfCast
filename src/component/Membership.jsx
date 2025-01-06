@@ -3,11 +3,11 @@ import "./Membership.scss";
 function Membership(props) {
     return (
         <>
-            <div className="card__container">
-                <img src={props.img} alt="" className="card__img" />
-                <div className="card__title">
+            <div className="membership-card">
+                <img src={props.img} alt="" className="membership-card__img" />
+                <div className="membership-card__title">
                     <h3>{props.title}</h3>
-                    <p>{props.text}</p>
+                    <p>{props.children}</p>
                 </div>
             </div>
         </>

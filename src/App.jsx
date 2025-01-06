@@ -336,7 +336,24 @@ function App() {
                             <h3>Become our sponsor and get all benefits</h3>
                         </div>
                         <div className="membership__info-container">
-                            <Membership img={"/membership/1.png"} title={"Topic by Request"} text={""} />
+                            <Membership img={"/membership/1.png"} title={"Topic by Request"}>
+                                Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.
+                            </Membership>
+                            <Membership img={"/membership/2.png"} title={"Exclusive Content"}>
+                                Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.
+                            </Membership>
+                            <Membership img={"/membership/3.png"} title={"Join the Community"}>
+                                Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.
+                            </Membership>
+                            <Membership img={"/membership/4.png"} title={"Livestreaming Access"}>
+                                Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.
+                            </Membership>
+                            <Membership img={"/membership/5.png"} title={"Exclusive Episodes & Merch"}>
+                                Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.
+                            </Membership>
+                            <Membership img={"/membership/6.png"} title={"And much more!"}>
+                                Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.
+                            </Membership>
                         </div>
                         <button className="membership__button">SEE PRICING</button>
                     </div>
