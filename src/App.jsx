@@ -1,5 +1,6 @@
 import "./App.scss";
 import Testimonial from "./component/Testimonial.jsx";
+import Membership from "./component/Membership.jsx";
 import React, { useRef } from "react";
 
 function App() {
@@ -334,7 +335,9 @@ function App() {
                             <h1>Membership benefits</h1>
                             <h3>Become our sponsor and get all benefits</h3>
                         </div>
-                        <div className="membership__info-container"></div>
+                        <div className="membership__info-container">
+                            <Membership img={"/membership/1.png"} title={"Topic by Request"} text={""} />
+                        </div>
                         <button className="membership__button">SEE PRICING</button>
                     </div>
                 </div>

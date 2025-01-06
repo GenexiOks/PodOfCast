@@ -22,6 +22,12 @@ body {
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 768px) {
+    /* Здесь можно указать стили для мобильных устройств */
+    #root {
+        padding: 10px;
+    }
+}
 /* Links */
 
 a,
