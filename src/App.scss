@@ -27,6 +27,12 @@
     box-sizing: border-box;
 }
 
+.scribble {
+    position: absolute;
+    top: -77px;
+    left: 505px;
+}
+
 // ------HEADER--------------
 
 .header {
@@ -453,17 +459,12 @@
 
 .membership {
     height: 1153px;
+    background: white;
 
     &__container {
         position: relative;
         width: 100%;
         height: 100%;
-    }
-
-    &__img-one {
-        position: absolute;
-        top: -77px;
-        left: 505px;
     }
 
     &__img-second {
@@ -519,5 +520,24 @@
         height: 484px;
         gap: 20px;
         flex-wrap: wrap;
+    }
+}
+
+// ----------Contant--------------------
+
+.contant {
+    height: 1456px;
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .contant__img-second {
+    }
+    .contant__title {
+    }
+    .contant__card-container {
+    }
+    .contant__button {
     }
 }

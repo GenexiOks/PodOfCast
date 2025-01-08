@@ -329,7 +329,7 @@ function App() {
                 </div>
                 <div className="membership">
                     <div className="membership__container _container">
-                        <img className="membership__img-one" src="/testimonials/img.png" />
+                        <img className="membership__scribble scribble" src="/testimonials/img.png" />
                         <img className="membership__img-second" src="/scribble.png" />
                         <div className="membership__title">
                             <h1>Membership benefits</h1>
@@ -357,6 +357,18 @@ function App() {
                         </div>
                         <button className="membership__button">SEE PRICING</button>
                     </div>
+                </div>
+                <div className="contant">
+                    <div className="contant__container _container">
+                        <img className="contant__img-first scribble" src="/scribble2.png" alt="scribble" />
+                        <img src="" alt="" className="contant__img-second" />
+                        <div className="contant__title">
+                            <h1></h1>
+                            <h3></h3>
+                        </div>
+                        <div className="contant__card-container"></div>
+                    </div>
+                    <button className="contant__button"></button>
                 </div>
             </main>
             <div className="footer"></div>
