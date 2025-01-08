@@ -361,7 +361,7 @@ function App() {
                 <div className="contant">
                     <div className="contant__container _container">
                         <img className="contant__img-first scribble" src="/scribble2.png" alt="scribble" />
-                        <img src="" alt="" className="contant__img-second" />
+                        <img src="/scribble3.png" alt="scribble" className="contant__img-second" />
                         <div className="contant__title">
                             <h1></h1>
                             <h3></h3>

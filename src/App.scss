@@ -532,12 +532,19 @@
         width: 100%;
         height: 100%;
     }
-    .contant__img-second {
+
+    &__img-second {
+        position: absolute;
+        width: 125.14px;
+        height: 120.63px;
+        top: 59.7px;
+        left: 57.46px;
     }
-    .contant__title {
-    }
-    .contant__card-container {
-    }
-    .contant__button {
-    }
+}
+
+.contant__title {
+}
+.contant__card-container {
+}
+.contant__button {
 }
