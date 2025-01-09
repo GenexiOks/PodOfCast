@@ -363,12 +363,12 @@ function App() {
                         <img className="contant__img-first scribble" src="/scribble2.png" alt="scribble" />
                         <img src="/scribble3.png" alt="scribble" className="contant__img-second" />
                         <div className="contant__title">
-                            <h1></h1>
-                            <h3></h3>
+                            <h1>Recent Episodes</h1>
+                            <h3>Available on your favorite platform</h3>
                         </div>
                         <div className="contant__card-container"></div>
+                        <button className="contant__button">BROWSE ALL EPISODES</button>
                     </div>
-                    <button className="contant__button"></button>
                 </div>
             </main>
             <div className="footer"></div>
