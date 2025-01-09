@@ -2,6 +2,7 @@ import "./App.scss";
 import Testimonial from "./component/Testimonial.jsx";
 import Membership from "./component/Membership.jsx";
 import React, { useRef } from "react";
+import ContentCard from "./component/ContentCard.jsx";
 
 function App() {
     const containerRef = useRef(null);
@@ -366,7 +367,9 @@ function App() {
                             <h1>Recent Episodes</h1>
                             <h3>Available on your favorite platform</h3>
                         </div>
-                        <div className="contant__card-container"></div>
+                        <div className="contant__card-container">
+                            <ContentCard />
+                        </div>
                         <button className="contant__button">BROWSE ALL EPISODES</button>
                     </div>
                 </div>

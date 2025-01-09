@@ -535,6 +535,17 @@ button:hover {
         line-height: 22.4px;
     }
 
+    &__card-container {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        width: 1160px;
+        height: 787px;
+        top: 363px;
+        gap: 20px;
+        border-radius: 12px;
+    }
+
     &__img-second {
         position: absolute;
         top: 253px;
@@ -558,7 +569,4 @@ button:hover {
             text-align: center;
         }
     }
-}
-
-.contant__card-container {
 }
