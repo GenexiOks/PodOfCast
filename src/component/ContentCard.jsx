@@ -1,6 +1,6 @@
 import "./ContentCard.scss";
 
-function ContentCard() {
+function ContentCard(props) {
     return (
         <>
             <div className="content-card">
@@ -8,23 +8,23 @@ function ContentCard() {
                     <img src="/content/cover1.png" alt="card-img" />
                     <div className="content-card__title-container title-container">
                         <div className="title-container__title">
-                            <p>Eps. 6</p>
-                            <h3>Pandemic Becoming Endemic</h3>
+                            <p>{props.episod}</p>
+                            <h3>{props.title}</h3>
                         </div>
                         <div className="title-container__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. </p>
+                            <p>{props.text}</p>
                         </div>
                     </div>
                 </div>
                 <div className="content-card__tag-container">
-                    <div className="content-card__tag-first">covid-19</div>
-                    <div className="content-card__tag-second">health</div>
+                    <div className="content-card__tag-first">{props.tag}</div>
+                    <div className="content-card__tag-second">{props.tag2}</div>
                 </div>
                 <div className="content-card__hosteds-container">
                     <p>Hosted by: </p>
                     <div>
-                        <img className="content-card__avatar-first" src="/content/avatar/avatar1.png" alt="avatar" />
-                        <img className="content-card__avatar-second" src="/content/avatar/avatar2.png" alt="avatar" />
+                        <img className="content-card__avatar-first" src={props.avatar1} alt="avatar" />
+                        <img className="content-card__avatar-second" src={props.avatar2} alt="avatar" />
                     </div>
                 </div>
             </div>

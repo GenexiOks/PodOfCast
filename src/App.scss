@@ -513,7 +513,7 @@ button:hover {
 
 // ----------Contant--------------------
 
-.contant {
+.content {
     height: 1456px;
 
     &__container {
@@ -537,12 +537,9 @@ button:hover {
 
     &__card-container {
         position: absolute;
-        display: flex;
-        flex-wrap: wrap;
         width: 1160px;
         height: 787px;
         top: 363px;
-        gap: 20px;
         border-radius: 12px;
     }
 

@@ -2,7 +2,7 @@ import "./App.scss";
 import Testimonial from "./component/Testimonial.jsx";
 import Membership from "./component/Membership.jsx";
 import React, { useRef } from "react";
-import ContentCard from "./component/ContentCard.jsx";
+import Content from "./component/Content.jsx";
 
 function App() {
     const containerRef = useRef(null);
@@ -359,18 +359,18 @@ function App() {
                         <button className="membership__button">SEE PRICING</button>
                     </div>
                 </div>
-                <div className="contant">
-                    <div className="contant__container _container">
-                        <img className="contant__img-first scribble" src="/scribble2.png" alt="scribble" />
-                        <img src="/scribble3.png" alt="scribble" className="contant__img-second" />
-                        <div className="contant__title">
+                <div className="content">
+                    <div className="content__container _container">
+                        <img className="content__img-first scribble" src="/scribble2.png" alt="scribble" />
+                        <img src="/scribble3.png" alt="scribble" className="content__img-second" />
+                        <div className="content__title">
                             <h1>Recent Episodes</h1>
                             <h3>Available on your favorite platform</h3>
                         </div>
-                        <div className="contant__card-container">
-                            <ContentCard />
+                        <div className="content__card-container">
+                            <Content />
                         </div>
-                        <button className="contant__button">BROWSE ALL EPISODES</button>
+                        <button className="content__button">BROWSE ALL EPISODES</button>
                     </div>
                 </div>
             </main>
