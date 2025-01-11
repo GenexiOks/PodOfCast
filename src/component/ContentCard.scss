@@ -91,7 +91,6 @@
     display: flex;
     flex-direction: column;
     width: 352px;
-    margin-top: 17.5px;
     height: 131px;
     gap: 15px;
 
@@ -107,7 +106,7 @@
             font-weight: 700;
             line-height: 25.6px;
             text-align: left;
-            color: rgba(205, 70, 49, 1);
+            color: black;
         }
 
         & > h3 {
@@ -116,7 +115,7 @@
             line-height: 31.71px;
             letter-spacing: -0.02em;
             text-align: left;
-            color: rgba(205, 70, 49, 1);
+            color: black;
         }
     }
 
@@ -137,4 +136,12 @@
             color: rgba(77, 77, 77, 1);
         }
     }
+}
+
+.content-card:hover .title-container__episod,
+.content-card:hover .title-container__title {
+    color: rgba(205, 70, 49, 1);
+}
+.content-card:hover {
+    box-shadow: 10px 10px 0px 0px rgba(129, 173, 200, 1);
 }

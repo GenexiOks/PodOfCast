@@ -5,11 +5,11 @@ function ContentCard(props) {
         <>
             <div className="content-card">
                 <div className="content-card__title">
-                    <img src="/content/cover1.png" alt="card-img" />
+                    <img src={props.img} alt="card-img" />
                     <div className="content-card__title-container title-container">
                         <div className="title-container__title">
-                            <p>{props.episod}</p>
-                            <h3>{props.title}</h3>
+                            <p className="title-container__episod">{props.episod}</p>
+                            <h3 className="title-container__title">{props.title}</h3>
                         </div>
                         <div className="title-container__text">
                             <p>{props.text}</p>
@@ -18,7 +18,7 @@ function ContentCard(props) {
                 </div>
                 <div className="content-card__tag-container">
                     <div className="content-card__tag-first">{props.tag}</div>
-                    <div className="content-card__tag-second">{props.tag2}</div>
+                    {props.tag2 ? <div className="content-card__tag-second">{props.tag2}</div> : ""}
                 </div>
                 <div className="content-card__hosteds-container">
                     <p>Hosted by: </p>
