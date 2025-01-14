@@ -9,6 +9,7 @@
     &__title {
         position: absolute;
         display: flex;
+        align-items: center;
         width: 538px;
         height: 166px;
         top: 16px;
@@ -91,14 +92,14 @@
     display: flex;
     flex-direction: column;
     width: 352px;
-    height: 131px;
+    max-height: min-content;
     gap: 15px;
 
     &__title {
         display: flex;
         flex-direction: column;
         width: 352px;
-        height: 62px;
+        max-height: min-content;
         gap: 4px;
 
         & > p {

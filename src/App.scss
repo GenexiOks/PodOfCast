@@ -33,7 +33,7 @@
     left: 505px;
 }
 
-button:hover {
+._button-hover:hover {
     box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
     background-color: black;
     color: white;
@@ -514,7 +514,7 @@ button:hover {
 // ----------Contant--------------------
 
 .content {
-    height: 1456px;
+    height: 1454px;
 
     &__container {
         position: relative;
@@ -565,5 +565,73 @@ button:hover {
             line-height: 36.24px;
             text-align: center;
         }
+    }
+}
+
+// --------------pricing--------------------------------
+
+.pricing {
+    height: 1196px;
+    background-color: white;
+
+    &__container {
+        position: relative;
+        height: 100%;
+    }
+
+    &__title-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 623px;
+        height: 127px;
+        top: 140px;
+        left: 269px;
+        gap: 20px;
+
+        & h1 {
+            font-size: 59.3px;
+            font-weight: 700;
+            line-height: 71.16px;
+            letter-spacing: -0.02em;
+            text-align: center;
+        }
+
+        & h3 {
+            font-size: 22.65px;
+            font-weight: 500;
+            line-height: 36.24px;
+            text-align: center;
+            color: rgba(77, 77, 77, 1);
+        }
+    }
+
+    &__img-second {
+        position: absolute;
+        top: 77px;
+        left: 195px;
+    }
+
+    &__img-third {
+        position: absolute;
+        top: 300px;
+        left: 1087px;
+        z-index: 0;
+    }
+
+    &__img-fourth {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: 976px;
+        left: -70px;
+        z-index: 0;
+    }
+
+    &__cards-container {
+        position: absolute;
+        height: 689px;
+        width: 100%;
+        top: 367px;
     }
 }

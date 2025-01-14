@@ -1,0 +1,26 @@
+.pricing-card {
+    width: 373px;
+    display: flex;
+    flex-direction: column;
+    height: 689px;
+    top: 367px;
+    z-index: 50;
+    left: 140px;
+    gap: 20px;
+
+    &__block-price {
+        width: 373px;
+        height: 357px;
+        padding: 60px 40px 30px 40px;
+        border-radius: 8px;
+        border: 1.5px solid rgba(0, 0, 0, 1);
+    }
+
+    &__block-info {
+        width: 373px;
+        height: 312px;
+        padding: 60px 40px 30px 40px;
+        border-radius: 8px;
+        border: 1.5px solid rgba(0, 0, 0, 1);
+    }
+}
