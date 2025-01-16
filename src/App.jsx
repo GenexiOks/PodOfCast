@@ -415,10 +415,12 @@ function App() {
                 </div>
                 <div className="pricing">
                     <div className="pricing__container _container">
-                        <img className="pricing__img-first scribble" src="/scribble2.png" />
-                        <img className="pricing__img-second" src="/pricing/sparkle.png" />
-                        <img className="pricing__img-third" src="/pricing/star.png" />
-                        <img className="pricing__img-fourth" src="/pricing/vector.png" />
+                        <div className="pricing__backgraund">
+                            <img className="pricing__img-first scribble" src="/scribble2.png" />
+                            <img className="pricing__img-second" src="/pricing/sparkle.png" />
+                            <img className="pricing__img-third" src="/pricing/star.png" />
+                            <img className="pricing__img-fourth" src="/pricing/vector.png" />
+                        </div>
                         <div className="pricing__title-container">
                             <h1>Become our sponsor</h1>
                             <h3>Get exclusive episodes, merch and more</h3>

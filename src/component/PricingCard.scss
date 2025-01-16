@@ -1,16 +1,40 @@
+._popular {
+    background: rgba(247, 237, 232, 1);
+}
+
 .pricing-card {
     width: 373px;
     display: flex;
     flex-direction: column;
     height: 689px;
-    top: 367px;
-    z-index: 50;
-    left: 140px;
     gap: 20px;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__popular {
+        width: 119px;
+        height: 25px;
+        color: white;
+        padding: 3px 0;
+        border-radius: 4px;
+        background: rgba(205, 70, 49, 1);
+        border: 1px solid rgba(205, 70, 49, 1);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 19.2px;
+        text-align: center;
+    }
 
     &__block-price {
         width: 373px;
         height: 357px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 60px 40px 30px 40px;
         border-radius: 8px;
         border: 1.5px solid rgba(0, 0, 0, 1);
@@ -22,5 +46,63 @@
         padding: 60px 40px 30px 40px;
         border-radius: 8px;
         border: 1.5px solid rgba(0, 0, 0, 1);
+    }
+
+    &__title-container {
+        width: 293px;
+        height: 115px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & > p {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22.4px;
+            text-align: left;
+            color: rgba(77, 77, 77, 1);
+        }
+    }
+
+    &__subscribe-container {
+        width: 293px;
+        height: 62px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & button {
+            width: 160px;
+            height: 62px;
+            border-radius: 8px;
+            border: 2px solid black;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 22.4px;
+        }
+    }
+
+    &__price-month {
+        max-width: min-content;
+        height: 53px;
+
+        & span {
+            font-family: "Montserrat Alternates";
+            font-size: 22.65px;
+            font-weight: 700;
+            line-height: 22.4px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            font-size: 14px;
+            color: rgba(77, 77, 77, 1);
+        }
+
+        & h3 {
+            font-size: 22.65px;
+            font-weight: 700;
+            color: rgba(205, 70, 49, 1);
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
     }
 }
