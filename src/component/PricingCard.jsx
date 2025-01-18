@@ -25,7 +25,18 @@ function PricingCard(props) {
                         </div>
                     </div>
                 </div>
-                <div className={props.popular ? "pricing-card__block-info _popular" : "pricing-card__block-info"}></div>
+                <div className={props.popular ? "pricing-card__block-info _popular" : "pricing-card__block-info"}>
+                    <div className="pricing-card__info">
+                        <p>What’s included:</p>
+                        <div className="pricing-card__benefits">
+                            <ul>
+                                {props.features.map((value) => (
+                                    <li>• {value}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );
