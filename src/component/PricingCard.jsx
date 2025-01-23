@@ -29,11 +29,7 @@ function PricingCard(props) {
                     <div className="pricing-card__info">
                         <p>What’s included:</p>
                         <div className="pricing-card__benefits">
-                            <ul>
-                                {props.features.map((value) => (
-                                    <li>• {value}</li>
-                                ))}
-                            </ul>
+                            <ul>{props.features.map((value) => (props.bold ? <b>• {value}</b> : <li>• {value}</li>))}</ul>
                         </div>
                     </div>
                 </div>
