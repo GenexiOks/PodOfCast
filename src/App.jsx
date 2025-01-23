@@ -4,6 +4,7 @@ import Membership from "./component/Membership.jsx";
 import React, { useRef } from "react";
 import Content from "./component/Content.jsx";
 import Pricing from "./component/Pricing.jsx";
+import News from "./component/News.jsx";
 
 function App() {
     const containerRef = useRef(null);
@@ -428,6 +429,23 @@ function App() {
                         <div className="pricing__cards-container">
                             <Pricing />
                         </div>
+                    </div>
+                </div>
+                <div className="blog">
+                    <div className="blog__container _container">
+                        <div className="blog__backgraund">
+                            <img className="blog__img-first scribble" src="/scribble2.png" />
+                            <img className="blog__img-second" src="/blog/vector.png" />
+                            <img className="blog__img-third" src="/blog/scribble.png" />
+                        </div>
+                        <div className="blog__title-container">
+                            <h1>Article and News</h1>
+                            <h3>News, tips, tricks and more</h3>
+                        </div>
+                        <div className="blog__news-container">
+                            <News />
+                        </div>
+                        <button className="_button-hover">BROWSE ALL</button>
                     </div>
                 </div>
             </main>

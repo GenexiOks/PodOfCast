@@ -2,6 +2,10 @@
     background: rgba(247, 237, 232, 1);
 }
 
+._advantages:first-child {
+    font-weight: 700;
+}
+
 .pricing-card {
     width: 373px;
     display: flex;
@@ -114,18 +118,18 @@
             color: rgba(77, 77, 77, 1);
         }
 
-        & li {
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 25.6px;
-            text-align: left;
-        }
-
         & ul {
             display: flex;
             flex-direction: column;
             gap: 10px;
             line-height: 25.6px;
+        }
+
+        & li {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25.6px;
+            text-align: left;
         }
     }
 
