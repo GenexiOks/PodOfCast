@@ -11,11 +11,18 @@ function NewsCard() {
                         <h2>Setup your own podcast</h2>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation
-                        ullamco laboris...
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
                     </p>
                 </div>
-                <div className="news-card__tags-container"></div>
+                <div className="news-card__footer">
+                    <div className="news-card__tags-date">
+                        <ul className="news-card__tags">
+                            <li>business</li>
+                            <li>startup</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </>
     );
