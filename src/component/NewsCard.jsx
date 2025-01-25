@@ -1,26 +1,27 @@
 import "./NewsCard.scss";
 
-function NewsCard() {
+function NewsCard(props) {
     return (
         <>
             <div className="news-card">
-                <img src="/blog/img2.png" alt="img" />
+                <img src={props.photo} alt="img" />
                 <div className="news-card__title-container">
                     <div className="news-card__title">
-                        <p>PODCAST</p>
-                        <h2>Setup your own podcast</h2>
+                        <p>{props.title}</p>
+                        <h2>{props.name}</h2>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
-                    </p>
+                    <p>{props.text}</p>
                 </div>
                 <div className="news-card__footer">
                     <div className="news-card__tags-date">
                         <ul className="news-card__tags">
-                            <li>business</li>
-                            <li>startup</li>
+                            {props.tags.map((value, index) => (
+                                <li key={index}>{value}</li>
+                            ))}
                         </ul>
+                        <div className="news-card__date">
+                            <p>{props.date}</p>
+                        </div>
                     </div>
                 </div>
             </div>
