@@ -704,3 +704,117 @@
         top: 367px;
     }
 }
+
+// -------------CTA--------------------------
+
+.cta {
+    position: relative;
+    height: 816px;
+    background: rgba(237, 243, 247, 1);
+
+    & * h1 {
+        position: absolute;
+        width: 486px;
+        height: 142px;
+        top: 188px;
+        left: 337px;
+        text-align: center;
+    }
+
+    & * h3 {
+        position: absolute;
+        width: 410px;
+        height: 36px;
+        top: 358px;
+        left: 375px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 22.65px;
+        line-height: 36.24px;
+        color: rgba(77, 77, 77, 1);
+    }
+
+    &__home-img {
+        position: absolute;
+        top: 400.26px;
+    }
+
+    &__play-img {
+        position: absolute;
+        width: 373px;
+        top: 82px;
+        right: 10px;
+    }
+
+    &__sparkle {
+        position: absolute;
+        top: 433px;
+        left: 927px;
+        padding: 29.85px 28.7px 29.83px 28.73px;
+    }
+
+    &__sparkle-black {
+        position: absolute;
+        top: 297px;
+        left: -16px;
+        padding: 16.12px 16.32px 16.14px 16.35px;
+    }
+
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    ._container {
+    }
+    .scribble {
+    }
+    &__beta {
+        position: absolute;
+        width: 52px;
+        height: 28px;
+        top: 139px;
+        left: 554px;
+        padding: 3px 6px 3px 6px;
+        text-align: center;
+        border-radius: 4px;
+        border: 1px solid rgba(205, 70, 49, 1);
+        color: rgba(205, 70, 49, 1);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22.4px;
+    }
+    .cta__btm-download {
+        position: absolute;
+        width: 210px;
+        height: 62px;
+        top: 534px;
+        left: 475px;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 8px;
+        border: 2px solid rgba(0, 0, 0, 1);
+    }
+    .cta__platform {
+        position: absolute;
+        width: 187px;
+        height: 56px;
+        display: flex;
+        flex-direction: column;
+        top: 620px;
+        left: 487px;
+        gap: 10px;
+        align-items: center;
+
+        & > p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22.4px;
+            color: rgba(77, 77, 77, 1);
+        }
+    }
+    .cta__platform-container {
+        display: flex;
+        gap: 20px;
+    }
+}

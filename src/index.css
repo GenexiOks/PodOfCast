@@ -8,6 +8,7 @@
     overflow: hidden;
     min-height: 100%;
     margin: 0 auto;
+    cursor: default;
 }
 
 html,
