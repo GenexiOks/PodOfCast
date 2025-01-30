@@ -1,4 +1,4 @@
-import "./Membership.scss";
+import "../scss/Membership.scss";
 
 function Membership(props) {
     return (

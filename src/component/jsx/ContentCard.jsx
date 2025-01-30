@@ -1,4 +1,4 @@
-import "./ContentCard.scss";
+import "../scss/ContentCard.scss";
 
 function ContentCard(props) {
     return (

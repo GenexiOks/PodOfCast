@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import "./Testimonial.scss";
+import "../scss/Testimonial.scss";
 
 function Testimonial(props) {
     return (

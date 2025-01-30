@@ -1,4 +1,4 @@
-import "./NewsCard.scss";
+import "../scss/NewsCard.scss";
 
 function NewsCard(props) {
     return (

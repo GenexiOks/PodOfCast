@@ -1,5 +1,5 @@
-import "./News.scss";
-import NewsCard from "./NewsCard";
+import "../scss/News.scss";
+import NewsCard from "./NewsCard.jsx";
 
 function News() {
     const newsData = [

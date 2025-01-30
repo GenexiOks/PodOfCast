@@ -1,4 +1,4 @@
-import "./Pricing.scss";
+import "../scss/Pricing.scss";
 import PricingCard from "./PricingCard.jsx";
 
 function Pricing() {

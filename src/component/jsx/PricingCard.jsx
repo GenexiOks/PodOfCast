@@ -1,4 +1,4 @@
-import "./PricingCard.scss";
+import "../scss/PricingCard.scss";
 
 function PricingCard(props) {
     return (
