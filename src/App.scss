@@ -846,11 +846,82 @@
 .footer {
     height: 618px;
     background: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    line-height: 25.6px;
+    font-size: 16px;
+    color: rgba(77, 77, 77, 1);
+
+    &__social {
+        position: absolute;
+        width: 122px;
+        height: 24px;
+        top: 338px;
+        display: flex;
+        gap: 25px;
+
+        div:hover path {
+            fill: rgba(205, 70, 49, 1);
+        }
+    }
+
+    &__date {
+        position: absolute;
+        width: 39px;
+        height: 19px;
+        top: 195px;
+        left: 98px;
+        font-size: 12px;
+        line-height: 19.2px;
+    }
+
+    &__text {
+        position: absolute;
+        width: 275px;
+        height: 44px;
+        top: 254px;
+        font-size: 14px;
+        line-height: 22.4px;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 140px;
+    }
 
     &__container {
         position: relative;
         width: 100%;
         height: 100%;
+    }
+
+    nav {
+        position: absolute;
+        top: 140px;
+        width: 270px;
+        left: 393px;
+        height: 104px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        max-width: 100%;
+        height: 118px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25.6px;
+            text-align: left;
+            color: rgba(77, 77, 77, 1);
+        }
+
+        a:hover {
+            color: rgba(205, 70, 49, 1);
+        }
     }
 }
 // ------------footnote---------------------------------------
@@ -865,9 +936,7 @@
     top: 499px;
     gap: 20px;
     border-top: 0.5px solid rgba(77, 77, 77, 1);
-    color: rgba(77, 77, 77, 1);
     font-size: 12px;
-    font-weight: 500;
     line-height: 19.2px;
 
     span {
@@ -885,12 +954,40 @@
 // ------Media------------------------------
 
 .media-platform {
+    position: absolute;
     width: 373px;
     height: 77px;
     top: 140px;
-    left: 927px;
+    left: 787px;
+    display: flex;
+    flex-direction: column;
     gap: 29px;
 
-    &__conatiner {
+    &__frame {
+        width: 373px;
+        height: 22px;
+        display: flex;
+        gap: 38.5px;
+    }
+}
+
+// -----APP---------------------------------
+
+.app-platform {
+    position: absolute;
+    width: 145px;
+    height: 82px;
+    top: 277px;
+    left: 787px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+
+    &__frame {
+        width: 92px;
+        height: 36px;
+        display: flex;
+        gap: 20px;
     }
 }
