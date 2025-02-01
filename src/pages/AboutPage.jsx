@@ -1,5 +1,5 @@
 import React from "react";
-import "./scss/AboutPage.scss";
+import styles from "./scss/AboutPage.module.scss";
 import { Link } from "react-router-dom";
 
 const AboutPage = () => {
@@ -44,8 +44,8 @@ const AboutPage = () => {
                     </div>
                 </div>
             </header>
-            <main className="page">
-                <div className="main-block main-block--about"></div>
+            <main className={styles.page}>
+                <p styleName="text">Текст</p>
             </main>
         </>
     );
