@@ -63,6 +63,10 @@ p {
     font-weight: inherit;
 }
 
+p {
+    color: rgba(77, 77, 77, 1);
+}
+
 h1 {
     font-weight: 700;
     font-size: 59.3px;

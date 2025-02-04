@@ -1,6 +1,8 @@
 import React from "react";
-import styles from "./scss/AboutPage.module.scss";
+import "./scss/AboutPage.module.scss";
 import { Link } from "react-router-dom";
+import classNames from "classnames";
+import styles from "./scss/AboutPage.module.scss";
 
 const AboutPage = () => {
     return (
@@ -8,7 +10,7 @@ const AboutPage = () => {
             <header className="header">
                 <div className="header__container _container">
                     <div className="header__logo">
-                        <img src="/logo/logo.svg" alt="logo" />
+                        <img src="/MainPage/logo/logo.svg" alt="logo" />
                     </div>
                     <nav className="header__nav nav">
                         <ul className="nav__ul">
@@ -44,8 +46,50 @@ const AboutPage = () => {
                     </div>
                 </div>
             </header>
-            <main className={styles.page}>
-                <p styleName="text">Текст</p>
+            <main className="page">
+                <div className={classNames(styles["main-block"])}>
+                    <img className={classNames("main-block__img-one", styles["main-block__img-one"])} src="/MainPage/bkgdImg/boom.png" />
+                    <img className={classNames("main-block__img-second", styles["main-block__img-second"])} src="/AboutPage/mainBlock/vector.png" />
+                    <div className={classNames(styles["main-block__container"], "_container")}>
+                        <h1 className={styles["main-block__title"]}>
+                            About <br /> <span>Pod of Cast</span>
+                        </h1>
+                        <p className={styles["main-block__text"]}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt <br /> ut labore et dolore magna aliqua. Ut enim ad minim veniam–quis.
+                        </p>
+                        <div className={styles["main-block__btn-container"]}>
+                            <button className={classNames(styles["main-block__btn-sponsor"], styles["_button"], "_button-hover")}>BECOME SPONSOR</button>
+                            <button className={classNames(styles["main-block__btn-subcribe"], styles["_button"], "_button-hover")}>SUBSCRIBE</button>
+                        </div>
+                        <div className={styles["main-block__row"]}>
+                            <div className={styles["main-block__column"]}>
+                                <div className={styles["item-about"]}>
+                                    <h1 className={styles["item-about__total"]}>
+                                        <span>76</span>K
+                                    </h1>
+                                    <p className={styles["item-about__name"]}>Community Members</p>
+                                </div>
+                            </div>
+                            <div className={styles["main-block__column"]}>
+                                <div className={styles["item-about"]}>
+                                    <h1 className={styles["item-about__total"]}>
+                                        <span>128</span>K
+                                    </h1>
+                                    <p className={styles["item-about__name"]}>Podcast Subscribers</p>
+                                </div>
+                            </div>
+                            <div className={styles["main-block__column"]}>
+                                <div className={styles["item-about"]}>
+                                    <h1 className={styles["item-about__total"]}>
+                                        <span>59</span>K
+                                    </h1>
+                                    <p className={styles["item-about__name"]}>Daily Listeners</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles["about-block"]}></div>
             </main>
         </>
     );
