@@ -147,6 +147,13 @@
             left: 331px;
       }
 
+      &__img-background3 {
+            position: absolute;
+            top: 1413px;
+            left: 735px;
+
+      }
+
       &__title {
             position: absolute;
             left: 408px;
@@ -176,6 +183,16 @@
                   color: black;
                   text-decoration: underline;
             }
+
+            &::after {
+                  content: '';
+                  position: absolute;
+                  top: 145%;
+                  left: 0;
+                  right: 0;
+                  border-top: 1px solid rgba(77, 77, 77, 1);
+                  z-index: 0;
+            }
       }
 
       &__about-text {
@@ -187,6 +204,27 @@
             justify-content: space-between;
             line-height: 25.6px;
             text-align: left;
+      }
+
+      &__bottom-title {
+            position: absolute;
+            top: 1493px;
+            left: 356px;
+            font-size: 36.65px;
+            font-weight: 700;
+            line-height: 51.31px;
+            letter-spacing: -0.02em;
+
+      }
+
+      &__host-container {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 520px;
+            top: 1624px;
+            gap: 20px;
+
       }
 }
 
@@ -201,15 +239,124 @@
       gap: 20px;
       text-align: center;
 
-
-      &__title {
-            /* Стили */
-      }
-
       .title-container__text {
             font-size: 22.65px;
             font-weight: 500;
             line-height: 36.24px;
             text-align: center;
+      }
+
+}
+
+
+
+
+.host-card {
+      position: relative;
+      width: 570px;
+      height: 520px;
+      border-radius: 8px;
+      border: 2px solid black;
+      box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+
+
+
+      &__host-photo {
+            position: absolute;
+            left: 16px;
+            top: 16px;
+            bottom: 16px;
+      }
+
+      &__background-vector {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+      }
+
+      &__info {
+            position: absolute;
+            width: 259px;
+            height: 188px;
+            top: 266px;
+            right: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+      }
+
+      &__title {
+            width: 259px;
+            height: 102px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+      }
+
+      &__host-number {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22.4px;
+
+      }
+
+      &__host-name {
+            font-size: 36.65px;
+            font-weight: 700;
+            line-height: 36.65px;
+            letter-spacing: -0.02em;
+
+
+      }
+
+      &__host-discription {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22.4px;
+            text-align: left;
+
+      }
+
+      &__host-sosial-block {
+            position: absolute;
+            width: 258px;
+            height: 30px;
+            bottom: 16px;
+            right: 16px;
+            gap: 10px;
+            border-top: 0.5px solid rgba(77, 77, 77, 1);
+
+      }
+
+      &__host-social {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 167px;
+            height: 20px;
+            display: flex;
+            gap: 19px;
+
+            p {
+                  font-size: 12px;
+                  font-weight: 700;
+                  line-height: 19.2px;
+                  text-align: left;
+
+            }
+      }
+
+      &__social-icons {
+            width: 80px;
+            display: flex;
+            height: 20px;
+            gap: 10px;
+
+            a {
+                  display: flex;
+                  align-items: center;
+                  justify-items: center;
+            }
       }
 }
