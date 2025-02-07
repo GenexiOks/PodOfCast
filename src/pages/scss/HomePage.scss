@@ -239,7 +239,7 @@
         height: 100%;
     }
 
-    .info-block__container > img {
+    .info-block__container>img {
         position: absolute;
         top: -74px;
         left: 505px;
@@ -286,7 +286,7 @@
         left: -60px;
     }
 
-    & > p {
+    &>p {
         position: absolute;
         top: 40px;
         left: 556px;
@@ -297,7 +297,7 @@
         color: rgba(205, 70, 49, 1);
     }
 
-    & > h2 {
+    &>h2 {
         position: absolute;
         width: 1160px;
         height: 102px;
@@ -349,7 +349,7 @@
         width: 236px;
         height: 22px;
 
-        & > p {
+        &>p {
             font-size: 14px;
             font-weight: 700;
             line-height: 22.4px;
@@ -425,26 +425,29 @@
         gap: 20px;
 
         &::-webkit-scrollbar {
-            display: none; /* Chrome, Safari and Opera */
+            display: none;
+            /* Chrome, Safari and Opera */
         }
     }
 
-    &__buttons {
-        position: absolute;
-        display: flex;
-        width: 116px;
-        height: 28px;
-        top: 787px;
-        left: 0;
-        gap: 20px;
 
-        & button {
-            width: 48px;
-            height: 38px;
+}
 
-            &:active path {
-                stroke: red;
-            }
+.scroll-buttons {
+    position: absolute;
+    display: flex;
+    width: 116px;
+    height: 28px;
+    top: 787px;
+    left: 0;
+    gap: 20px;
+
+    & button {
+        width: 48px;
+        height: 38px;
+
+        &:active path {
+            stroke: red;
         }
     }
 }
@@ -480,7 +483,7 @@
         left: 249px;
         gap: 20px;
 
-        & > h3 {
+        &>h3 {
             font-size: 22.65px;
             font-weight: 500;
             line-height: 36.24px;
@@ -559,7 +562,7 @@
         top: 137px;
         left: 331px;
 
-        & > h3 {
+        &>h3 {
             font-size: 22.65px;
             font-weight: 500;
             line-height: 36.24px;
@@ -780,6 +783,7 @@
         bottom: 0;
         right: 121px;
     }
+
     // ---------------------------------------
 
     &__container {
@@ -827,7 +831,7 @@
         gap: 10px;
         align-items: center;
 
-        & > p {
+        &>p {
             font-weight: 500;
             font-size: 14px;
             line-height: 22.4px;
@@ -924,6 +928,7 @@
         }
     }
 }
+
 // ------------footnote---------------------------------------
 
 .footnote {

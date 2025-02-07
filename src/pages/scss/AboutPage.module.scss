@@ -360,3 +360,71 @@
             }
       }
 }
+
+
+// -----------BLOCK SPONSOR------------------
+
+.block-sponsor {
+      height: 860px;
+      background: rgba(247, 237, 232, 1);
+
+      &__container {
+            position: relative;
+            height: 100%;
+      }
+
+      &__background-vector {
+            position: absolute;
+            top: 100px;
+            left: 320px;
+      }
+
+      &__title-container {
+            position: absolute;
+            width: 376px;
+            height: 127px;
+            top: 140px;
+            left: 392px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+      }
+
+      &__title {
+            font-size: 59.3px;
+            font-weight: 700;
+            line-height: 71.16px;
+            letter-spacing: -0.02em;
+
+      }
+
+      &__text {
+            font-size: 22.65px;
+            font-weight: 500;
+            line-height: 36.24px;
+            text-align: center;
+
+      }
+
+      &__buttons {
+            position: absolute;
+            top: 672px;
+      }
+
+      &__scroll-container {
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            overflow-x: auto;
+            width: 100%;
+            height: 245px;
+            top: 367px;
+            gap: 20px;
+
+            &::-webkit-scrollbar {
+                  display: none;
+                  /* Chrome, Safari and Opera */
+            }
+      }
+}
