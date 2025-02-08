@@ -76,7 +76,7 @@ const AboutPage = () => {
                     />
                     <img
                         className={classNames("main-block__img-second", styles["main-block__img-second"])}
-                        src="/AboutPage/mainBlock/vector.png"
+                        src="/AboutPage/MainBlock/vector.png"
                     />
                     <div className={classNames(styles["main-block__container"], "_container")}>
                         <h1 className={styles["main-block__title"]}>
@@ -305,7 +305,22 @@ const AboutPage = () => {
                             <h1 className={styles["block-sponsor__title"]}>Our Sponsor</h1>
                             <h3 className={styles["block-sponsor__text"]}>Our current official sponsor</h3>
                         </div>
-                        <div className={styles["block-sponsor__scroll-container"]}></div>
+                        <div className={styles["block-sponsor__scroll-container"]}>
+                            <div className={styles["sponsors-card"]}>
+                                <div className={styles["sponsor-card__content"]}>
+                                    <div className={styles["sponsor-card__sponsor"]}>
+                                        <div className={styles["sponsor-card__sponsor-name"]}>
+                                            <img src="./AboutPage/SponsorBlock/Google.png" alt="Google" />
+                                        </div>
+                                    </div>
+                                    <p className={styles["sponsor-card__discription"]}>
+                                        Quis dictum cursus faucibus mattis <span>dignissim</span>. Pellentes que purus
+                                        in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in
+                                        auctor. Gravida leo et.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                         <div className={classNames(styles["block-sponsor__buttons"], "scroll-buttons")}>
                             <button onClick={handleScrollLeft}>
                                 <svg
