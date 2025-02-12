@@ -27,7 +27,9 @@ function HomePage() {
             <header className="header">
                 <div className="header__container _container">
                     <div className="header__logo">
-                        <img src="/MainPage/logo/logo.svg" alt="logo" />
+                        <Link to="/">
+                            <img src="/MainPage/logo/logo.svg" alt="logo" />
+                        </Link>
                     </div>
                     <nav className="header__nav nav">
                         <ul className="nav__ul">
