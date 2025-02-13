@@ -572,7 +572,17 @@
       width: calc(373px * 2 + 20px);
       height: 496px;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__rows {
+            height: 244px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+      }
 
       &__input-container {
             width: 373px;
@@ -601,7 +611,6 @@
                   font-weight: 700;
                   font-size: 16px;
                   line-height: 25.6px;
-                  letter-spacing: 0%;
                   padding: 20px 19px;
 
                   &::before {
@@ -616,6 +625,12 @@
                         opacity: 0;
                         pointer-events: none;
                   }
+
+                  &::placeholder {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 25.6px;
+                  }
             }
 
 
@@ -623,6 +638,50 @@
             & input:focus {
                   border: 1.5px solid rgba(205, 70, 49, 1)
             }
-
       }
+
+      &__input-message {
+            width: 766px;
+            height: 212px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            & textarea {
+                  height: 165px;
+                  width: 766px;
+                  padding: 20px;
+                  border-radius: 8px;
+                  border: 1.5px solid black;
+                  font-family: "Montserrat Alternates", sans-serif;
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 25.6px;
+                  resize: none;
+
+                  &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        height: 75%;
+                        width: 10px;
+                        /* Ширина курсора */
+                        background-color: black;
+                        opacity: 0;
+                        pointer-events: none;
+                  }
+
+                  &::placeholder {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 25.6px;
+                  }
+
+                  &:focus {
+                        border: 1.5px solid rgba(205, 70, 49, 1)
+                  }
+            }
+      }
+
 }
