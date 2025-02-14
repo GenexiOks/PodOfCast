@@ -1,5 +1,5 @@
-import "../scss/Content.scss";
-import ContentCard from "../jsx/ContentCard.jsx";
+import "../scss/Content.scss"
+import ContentCard from "../jsx/ContentCard.jsx"
 
 const contentData = [
     {
@@ -61,19 +61,31 @@ const contentData = [
         tag2: "health",
         avatar1: "/MainPage/content/avatar/avatar1.png",
         avatar2: "/MainPage/content/avatar/avatar2.png",
+        link: "/Episode/1",
     },
-];
+]
 
 function Content() {
     const card = contentData.map((value, i) => (
-        <ContentCard episod={value.episod} title={value.title} text={value.text} tag={value.tag} img={value.img} tag2={value.tag2} key={i} avatar2={value.avatar2} avatar1={value.avatar1} />
-    ));
+        <ContentCard
+            episod={value.episod}
+            title={value.title}
+            text={value.text}
+            tag={value.tag}
+            img={value.img}
+            tag2={value.tag2}
+            key={i}
+            avatar2={value.avatar2}
+            avatar1={value.avatar1}
+            link={value.link}
+        />
+    ))
 
     return (
         <>
             <div className="content-card__container">{card}</div>
         </>
-    );
+    )
 }
 
-export default Content;
+export default Content

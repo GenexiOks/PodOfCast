@@ -80,7 +80,7 @@ function HomePage() {
                     <div className="main-block__carusel-container carusel-container">
                         <img src="/MainPage/carusel/img1.png" alt="img1" />
                         <img src="/MainPage/carusel/img2.png" alt="img1" />
-                        <Link to="/EpisodeOne">
+                        <Link to="/Episode/1">
                             <img src="/MainPage/carusel/img3.png" alt="img1" />
                         </Link>
                         <img src="/MainPage/carusel/img4.png" alt="img1" />

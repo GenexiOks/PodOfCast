@@ -1,4 +1,4 @@
-import "./scss/EpisodeOne.module.scss"
+import styles from "./scss/EpisodeOne.module.scss"
 import { Link } from "react-router-dom"
 
 function EpisodeOne() {
@@ -53,6 +53,20 @@ function EpisodeOne() {
                     </div>
                 </div>
             </header>
+            <main className="main">
+                <div className={styles["episode-block"]}>
+                    <img
+                        className={styles["episode__img-background2"]}
+                        src="./AboutPage/AboutBlock/vector2.png"
+                        alt="img"
+                    />
+                    <img
+                        className={styles["episode__img-background3"]}
+                        src="./AboutPage/AboutBlock/vector3.png"
+                        alt="img"
+                    />
+                </div>
+            </main>
         </>
     )
 }
