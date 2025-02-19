@@ -3,5 +3,19 @@ main {
 }
 
 .episode-block {
+    position: relative;
     height: 703px;
+    background: #f7ece8;
+
+    &__background-svg1 {
+        position: absolute;
+        left: 0;
+        top: -50px;
+    }
+
+    &__background-svg2 {
+        position: absolute;
+        right: -28px;
+        top: 112px;
+    }
 }
